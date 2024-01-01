@@ -30,4 +30,4 @@ gcc -Wall -Wextra -std=c2x -pedantic -o pong main.c -I./ -L./ -lraylib -lopengl3
 
 To run this application just double right click on the generated pong.exe file within the project directory
 
-The control keys are w and s for player 1 and up and down for player 2
+The control keys are w and s for player 1, up and down for player 2, and space to restart the game
