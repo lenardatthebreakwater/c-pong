@@ -23,7 +23,7 @@ git clone https://github.com/lenardatthebreakwater/c-pong.git
 * Compiling to an Executable (make sure you are within c-pong first)
 
 ```bash
-gcc -Wall -Wextra -std=c2x -pedantic -o pong pong.c -I./ -L./ -lraylib -lopengl32 -lgdi32 -lwinmm
+gcc -Wall -Wextra -std=c2x -pedantic -o pong main.c -I./ -L./ -lraylib -lopengl32 -lgdi32 -lwinmm
 ```  
 
 ## Usage
