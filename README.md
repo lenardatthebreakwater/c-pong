@@ -20,7 +20,7 @@ git clone https://github.com/lenardatthebreakwater/c-pong.git
 
 * From the raylib installation folder search for libraylib.a and raylib.h, then copy and paste both to c-pong's root directory
 
-* In the same raylib installation folder, add w64devkit's bin folder to PATH 
+* In the same raylib installation folder you will see a w64devkit folder, make sure to add it's bin path to your PATH 
 
 * Compiling to an Executable (make sure you are within c-pong first)
 
