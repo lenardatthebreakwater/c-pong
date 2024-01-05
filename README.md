@@ -18,7 +18,9 @@ A Pong game written in C using the Raylib library.
 git clone https://github.com/lenardatthebreakwater/c-pong.git
 ```
 
-* From the raylib installation folder search for libraylib.a and raylib.h, then copy and paste both to c-pong's root directory 
+* From the raylib installation folder search for libraylib.a and raylib.h, then copy and paste both to c-pong's root directory
+
+* In the same raylib installation folder, add w64devkit's bin folder to PATH 
 
 * Compiling to an Executable (make sure you are within c-pong first)
 
