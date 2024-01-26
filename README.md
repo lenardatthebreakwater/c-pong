@@ -6,7 +6,8 @@ A Pong game written in C using the Raylib library.
 
 ## Requirements
 * GCC for Windows
-* Raylib<br>
+* Raylib\
+\
 You can download both via the raylib installer from https://www.raylib.com/
 
 
