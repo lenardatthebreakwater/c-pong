@@ -36,7 +36,7 @@ int main(void) {
 	Rectangle player1Rect = {player1.x, player1.y, player1.width, player1.height};
 	Rectangle player2Rect = {player2.x, player2.y, player2.width, player2.height};
 
-	char winnerText[30] = { 0 };
+	char winnerText[30] = {0};
 
 	while (!WindowShouldClose()) {
 
@@ -51,10 +51,10 @@ int main(void) {
 			ball.speedY *= -1;
 		}
 		if (ball.x < 0) {
-			memcpy(winnerText, "Player 2 Wins", 14);
+			memcpy(winnerText, "Player 2 Wins\0", 14);
 		}
 		if (ball.x > screenWidth) {
-			memcpy(winnerText, "Player 1 Wins", 14);
+			memcpy(winnerText, "Player 1 Wins\0", 14);
 		}
 		if (CheckCollisionCircleRec((Vector2){ball.x, ball.y}, ball.radius, player1Rect)) {
 			if (ball.speedX < 0) {
@@ -96,10 +96,10 @@ int main(void) {
 		}
 
 
-		if (winnerText && IsKeyPressed(KEY_SPACE)) {
+		if (strlen(winnerText) > 0 && IsKeyPressed(KEY_SPACE)) {
 			ball.x = screenWidth / 2;
 			ball.y = screenHeight / 2;
-			memcpy(winnerText, "", 1);
+			memcpy(winnerText, "\0", 1);
 		}
 
 
@@ -108,7 +108,7 @@ int main(void) {
 		DrawCircle(ball.x, ball.y, ball.radius, ball.color);
 		DrawRectangleRec(player1Rect, player1.color);
 		DrawRectangleRec(player2Rect, player2.color);
-		if (winnerText) {
+		if (strlen(winnerText) > 0) {
 			int winnerTextWidth = MeasureText(winnerText, 40);
 			DrawText(winnerText, screenWidth / 2 - winnerTextWidth / 2, screenHeight / 2 - 30, 40, YELLOW);
 		}
