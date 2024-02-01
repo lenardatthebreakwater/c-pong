@@ -2,10 +2,11 @@
 
 ![preview](https://github.com/lenardatthebreakwater/c-pong/assets/142602437/c1bb17bc-89be-4ad4-b013-28db272f6aa9)
 
-A Pong game written in C using the Raylib library.  
+A Pong game written in C using the Raylib library.
+The build instruction below is only for Windows since I don't use Linux. 
 
 ## Requirements
-* GCC for Windows
+* GCC
 * Raylib\
 \
 You can download both via the raylib installer from https://www.raylib.com/
